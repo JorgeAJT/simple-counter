@@ -40,10 +40,13 @@ const SecondsCounter = () => {
                     <Digit key={index} number={digit} />
                 ))}
                 {isRunning === false ? (
-                    <button onClick={startCounter} className="ms-2 fw-bold col-12 col-lg-1">START</button>
+                    <button onClick={startCounter} className="ms-2 fw-bold col-12 col-lg-1 mb-5 mb-lg-0">START</button>
                 ) : (
-                    <button onClick={pauseCounter} className="ms-2 fw-bold col-12 col-lg-1">PAUSE</button>
+                    <button onClick={pauseCounter} className="ms-2 fw-bold col-12 col-lg-1 mb-5 mb-lg-0">PAUSE</button>
                 )}
+            </div>
+            <div className="fixed-bottom p-4 text-center fw-normal bg-dark text-white">
+                Copyright © Made with ❤️ by JorgeAJT, 2024
             </div>
         </>
     );
